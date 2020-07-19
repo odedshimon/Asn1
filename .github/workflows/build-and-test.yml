@@ -35,4 +35,4 @@ jobs:
       run: dotnet pack --configuration Release ./Asn1
 
     - name: Push package to NuGet
-      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --no-symbols true
