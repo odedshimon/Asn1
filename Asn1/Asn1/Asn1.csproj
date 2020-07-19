@@ -9,7 +9,7 @@ I have added tests, comiled as .Net Standard and packed it as a Nugget.
 The repo of this package is:
 https://github.com/odedshimon/Asn1</Description>
     <Authors>Oded Shimon</Authors>
-    <PackageLicenseExpression>MIT-License</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/odedshimon/Asn1</RepositoryUrl>
     <PackageId>Asn1DotNet</PackageId>
   </PropertyGroup>
