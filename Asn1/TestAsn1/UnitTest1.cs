@@ -9,7 +9,7 @@ namespace TestAsn1
         [TestMethod]
         public void TestDecodeBER()
         {
-            // Arrange.
+            // Arrange (Use a Kerberos AS_REQ buffer).
             var kerberos_as_req = new byte[]
             {
                 0x6a, 0x82, 0x01, 0x1f, 0x30, 0x82, 0x01, 0x1b, 0xa1, 0x03, 0x02, 0x01, 0x05, 0xa2, 0x03, 0x02,
