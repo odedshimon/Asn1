@@ -31,8 +31,8 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
       working-directory: ./Asn1
 
-    - name: Publish nuget package
-      run: find . -name *.nupkg -type f -print0 | xargs -0 -I pkg dotnet nuget push pkg -k $nuget_api_key -s "https://api.nuget.org/v3/index.json" --skip-duplicate
-      env:
-        nuget_api_key: ${{ secrets.NUGET_API_KEY }}
-      working-directory: ./src/nupkg
+    - name: Pack NuGet package
+      run: dotnet pack --configuration Release
+
+    - name: Push package to NuGet
+      run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
