@@ -1,3 +1,5 @@
+![badge](https://github.com/odedshimon/Asn1/workflows/Test%20Build%20Publish/badge.svg)
+
 # Asn1
 This package enables ASN1 manipulating.  
 The original source code is taken from Thomas Pornin:  
